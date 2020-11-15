@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -47,17 +47,17 @@
           <textarea class="col-8"></textarea>
           <button class="saveBtn btn col-2"></button>
         <tr>
-        <tr id="12" class="row">
+        <tr id="12" class="hour row">
           <div class="col-2">12:00</div>
           <textarea class="col-8"></textarea>
           <button class="saveBtn btn col-2"></button>
         </tr>
-        <tr id="13" class="row" >
-          <div class="col-2">1:00</div>
+        <tr id="13" class="hour row" >
+          <div class="hour col-2">1:00</div>
           <textarea class="time-block col-8"></textarea>
           <button class="saveBtn btn col-2"></button>
         </tr>
-        <tr id="14" class="row" >
+        <tr id="14" class="hour row" >
           <div class="hour col-2">2:00</div>
           <textarea class="time-block col-8"></textarea>
           <button class="saveBtn btn col-2"></button>
@@ -86,17 +86,26 @@
  <script type="text/javascript">
   $("#currentDay").append("The current date is " + moment().format('dddd MMMM Do'))
   function checkTime() {
-    var currentHour = parseInt (moment().format('h')); 
+    var currentHour = parseInt (moment().format('k')); 
     var workHours = parseInt($('tr').attr('id')); 
-    console.log (workHours)
-    console.log (currentHour)
-   
-    
-    
-  };
+    console.log(workHours)
+    console.log(currentHour)
+  
+  //  document.getElementbyid(currentHour))
+  //      $("hour").each(function(row){
+  //       //  $(row) 
+  //       if (currentHour= workHours) {
+  //        document.getElementById(currentHour).toggleclass(present);
+        
+  // //       if (currentHours){}
+       
+       
+      
+  // //       // if (this id is less then my currenthour its the past)
+  // //       // if (equal to the )
+  // //      })
+</script>  
   checkTime()
-</script>   
+ 
   </body>
 </html>
-
-
